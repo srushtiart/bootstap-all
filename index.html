@@ -9,7 +9,23 @@
 <!-- font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+<style>
+  .custom-jumbotron {
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    color: white;
+    padding: 50px;
+  }
+  .btn-gradient {
+      background: linear-gradient(45deg, #ff7e5f, #feb47b);
+      color: white;
+      border: none;
+    }
+    .btn-gradient:hover {
+      background: linear-gradient(45deg, #7bf1fe, #ff7e5f);
+      color: white;
+    }
+</style>
 </head>
 <body>
 
@@ -31,7 +47,7 @@
 </nav>
 
 <!-- Jumbotron -->
-<div class="bg-primary text-white text-center p-5">
+<div class="custom-jumbotron text-center mt-3">
   <h1>Welcome to Our Website!</h1>
   <p>Explore our amazing features.</p>
 </div>
@@ -54,20 +70,30 @@
 <div class="container my-4 d-flex gap-3 flex-wrap">
   <!-- Card with Button -->
   <div class="card" style="width: 18rem;">
+    <img src="pine-6865273_1280.jpg" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">Card Title</h5>
-      <p class="card-text">This is a card with a button.</p>
-      <a href="#" class="btn btn-secondary">Learn More</a>
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-gradient">Go somewhere</a>
     </div>
   </div>
   <!-- Card without Button -->
   <div class="card" style="width: 18rem;">
+    <img src="sprig-4875476_1280.jpg" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">Card Title</h5>
-      <p class="card-text">This is a card without a button.</p>
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      
     </div>
   </div>
-</div>
+  <div class="card" style="width: 18rem;">
+    <img src="heavenly-bamboo-6002077_1280.jpg" class="card-img-top" alt="Placeholder Image">
+    <div class="card-body">
+      <h5 class="card-title">Card Title</h5>
+      <p class="card-text">This is a card with an image and some related text. It's simple and effective for showcasing information.</p>
+      <a href="#" class="btn btn-gradient">Learn More</a>
+    </div>
+  </div>
 
 
 
@@ -76,13 +102,13 @@
   <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="sprig-4875476_1280.jpg" class="d-block w-100" alt="...">
+        <img src="sprig-4875476_1280.jpg" class="d-block w-100 " height="360" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="pine-6865273_1280.jpg" class="d-block w-100" alt="...">
+        <img src="pine-6865273_1280.jpg" class="d-block w-100 " height="360"alt="...">
       </div>
       <div class="carousel-item">
-        <img src="pine-7648311_1280.jpg" class="d-block w-100" alt="...">
+        <img src="pine-7648311_1280.jpg" class="d-block w-100 "height="360" alt="...">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
